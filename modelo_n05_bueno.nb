@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     97048,       2415]
-NotebookOptionsPosition[     91587,       2327]
-NotebookOutlinePosition[     91987,       2343]
-CellTagsIndexPosition[     91944,       2340]
+NotebookDataLength[     97041,       2413]
+NotebookOptionsPosition[     91579,       2325]
+NotebookOutlinePosition[     91980,       2341]
+CellTagsIndexPosition[     91937,       2338]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,7 +27,7 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"ClearAll", "[", 
      RowBox[{"c", ",", "G", ",", "MSun", ",", "rhoRadBBN"}], "]"}], ";"}], 
-   "\[IndentingNewLine]", "\n", 
+   "\n", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"c", "=", "29979245800"}], ";"}], "                   ", 
    RowBox[{"(*", 
@@ -52,7 +52,7 @@ Cell[BoxData[
       RowBox[{"10", "^", "28"}]}]}], ";"}], "               ", 
    RowBox[{"(*", 
     RowBox[{"masa", " ", 
-     RowBox[{"solar", ":", "g"}]}], "*)"}], "\n", "\[IndentingNewLine]", 
+     RowBox[{"solar", ":", "g"}]}], "*)"}], "\[IndentingNewLine]", "\n", 
    RowBox[{
     RowBox[{"rhoRadBBN", "=", 
      RowBox[{"7331305019814086", "*", 
@@ -2136,15 +2136,15 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"ClearAll", "[", 
-    RowBox[{"formationHeaders", ",", "formationGrid"}], "]"}], ";"}], "\n", 
-  "\[IndentingNewLine]", 
+    RowBox[{"formationHeaders", ",", "formationGrid"}], "]"}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "Se", " ", "guardan", " ", "por", " ", "separado", " ", "los", " ", 
     "encabezados", " ", "y", " ", "la", " ", "tabla", " ", "para", " ", 
     "poder", " ", "visualizarlos", " ", "y", " ", "exportarlos", " ", 
-    RowBox[{"posteriormente", "."}]}], "*)"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+    RowBox[{"posteriormente", "."}]}], "*)"}], "\[IndentingNewLine]"}], "\n", 
+
  RowBox[{
   RowBox[{
    RowBox[{"formationHeaders", "=", 
@@ -2152,7 +2152,7 @@ Cell[BoxData[{
      RowBox[{
      "\"\<xi\>\"", ",", "\"\<rhoBH/rhoFluid\>\"", ",", "\"\<betaTotal\>\"", 
       ",", "\"\<Hform [1/s]\>\"", ",", "\"\<MH [MSun]\>\"", ",", 
-      "\"\<Mform [MSun]\>\""}], "}"}]}], ";"}], "\n"}], "\[IndentingNewLine]", 
+      "\"\<Mform [MSun]\>\""}], "}"}]}], ";"}], "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"formationGrid", "=", 
@@ -2167,7 +2167,7 @@ Cell[BoxData[{
         RowBox[{"None", ",", 
          RowBox[{"{", 
           RowBox[{"LightGray", ",", "None"}], "}"}]}], "}"}]}]}], "]"}]}], 
-   ";"}], "\n"}], "\[IndentingNewLine]", "formationGrid"}], "Input",
+   ";"}], "\[IndentingNewLine]"}], "\n", "formationGrid"}], "Input",
  CellChangeTimes->{{3.9977741505704937`*^9, 3.9977741517427998`*^9}},
  CellLabel->"In[55]:=",ExpressionUUID->"13297b5a-a9ad-4a67-9b4a-12fe4aef959a"],
 
@@ -2237,7 +2237,7 @@ Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"ClearAll", "[", "pdfPath", "]"}], ";"}], "\n", 
+   RowBox[{"ClearAll", "[", "pdfPath", "]"}], ";"}], "\[IndentingNewLine]", 
   "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
@@ -2245,8 +2245,7 @@ Cell[BoxData[{
     " ", "PDF", " ", "en", " ", "la", " ", "misma", " ", "carpeta", " ", "en",
      " ", "la", " ", "que", " ", "se", " ", "encuentra", " ", "guardado", " ",
      "el", " ", 
-    RowBox[{"notebook", "."}]}], "*)"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+    RowBox[{"notebook", "."}]}], "*)"}], "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"pdfPath", "=", 
@@ -2255,7 +2254,7 @@ Cell[BoxData[{
       RowBox[{
        RowBox[{"NotebookDirectory", "[", "]"}], ",", 
        "\"\<tabla_formacion_n05.pdf\>\""}], "}"}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{"pdfPath", ",", "formationGrid", ",", "\"\<PDF\>\""}], 
   "]"}]}], "Input",
@@ -2289,7 +2288,7 @@ Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"ClearAll", "[", "csvPath", "]"}], ";"}], "\n", 
+   RowBox[{"ClearAll", "[", "csvPath", "]"}], ";"}], "\[IndentingNewLine]", 
   "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
@@ -2297,8 +2296,7 @@ Cell[BoxData[{
     "valores", " ", "num\[EAcute]ricos", " ", "de", " ", "la", " ", "tabla", 
     " ", "y", " ", "permite", " ", "abrirlos", " ", "posteriormente", " ", 
     "con", " ", "Mathematica", " ", "o", " ", 
-    RowBox[{"Excel", "."}]}], "*)"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+    RowBox[{"Excel", "."}]}], "*)"}], "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"csvPath", "=", 
@@ -2307,7 +2305,7 @@ Cell[BoxData[{
       RowBox[{
        RowBox[{"NotebookDirectory", "[", "]"}], ",", 
        "\"\<tabla_formacion_n05.csv\>\""}], "}"}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{"csvPath", ",", 
    RowBox[{"Prepend", "[", 
@@ -2326,7 +2324,7 @@ incognitas/tabla_formacion_n05.csv\"\>"], "Output",
 }, Open  ]]
 },
 WindowSize->{828., 437.25},
-WindowMargins->{{Automatic, 96}, {53.25, Automatic}},
+WindowMargins->{{-39, Automatic}, {Automatic, 38.25}},
 FrontEndVersion->"13.0 for Linux x86 (64-bit) (December 2, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"d90644e5-8478-42b0-85a8-25319c265bec"
@@ -2402,20 +2400,20 @@ Cell[77740, 2014, 2292, 55, 195, "Input",ExpressionUUID->"04574067-b318-4180-88e
 Cell[80035, 2071, 3268, 58, 473, "Output",ExpressionUUID->"ea2bfca6-2b07-4cc7-b65c-558d52c39550"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[83340, 2134, 1523, 37, 257, "Input",ExpressionUUID->"13297b5a-a9ad-4a67-9b4a-12fe4aef959a"],
-Cell[84866, 2173, 3270, 58, 473, "Output",ExpressionUUID->"97215400-c0b3-45d5-9e24-1f5229f9394c"]
+Cell[83340, 2134, 1521, 37, 257, "Input",ExpressionUUID->"13297b5a-a9ad-4a67-9b4a-12fe4aef959a"],
+Cell[84864, 2173, 3270, 58, 473, "Output",ExpressionUUID->"97215400-c0b3-45d5-9e24-1f5229f9394c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[88173, 2236, 1076, 27, 174, "Input",ExpressionUUID->"bb2d226a-1e2e-4181-923a-3cd06db925a2"],
-Cell[89252, 2265, 270, 4, 33, "Output",ExpressionUUID->"0a3016d7-7609-4786-bded-875c70b0d9c9"]
+Cell[88171, 2236, 1073, 26, 174, "Input",ExpressionUUID->"bb2d226a-1e2e-4181-923a-3cd06db925a2"],
+Cell[89247, 2264, 270, 4, 33, "Output",ExpressionUUID->"0a3016d7-7609-4786-bded-875c70b0d9c9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[89559, 2274, 243, 3, 29, "Input",ExpressionUUID->"10d72e7a-a9b8-4882-9a36-eb8c5d37ea11"],
-Cell[89805, 2279, 267, 4, 33, "Output",ExpressionUUID->"c14a8a68-e000-4ed1-beb8-d6a130cbd5d6"]
+Cell[89554, 2273, 243, 3, 29, "Input",ExpressionUUID->"10d72e7a-a9b8-4882-9a36-eb8c5d37ea11"],
+Cell[89800, 2278, 267, 4, 33, "Output",ExpressionUUID->"c14a8a68-e000-4ed1-beb8-d6a130cbd5d6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[90109, 2288, 1168, 29, 174, "Input",ExpressionUUID->"0ab6b17f-8d90-4f06-8c2a-2f0d125239ed"],
-Cell[91280, 2319, 291, 5, 33, "Output",ExpressionUUID->"2aa74916-5db7-4a3a-8522-000497929fdc"]
+Cell[90104, 2287, 1165, 28, 174, "Input",ExpressionUUID->"0ab6b17f-8d90-4f06-8c2a-2f0d125239ed"],
+Cell[91272, 2317, 291, 5, 33, "Output",ExpressionUUID->"2aa74916-5db7-4a3a-8522-000497929fdc"]
 }, Open  ]]
 }
 ]
